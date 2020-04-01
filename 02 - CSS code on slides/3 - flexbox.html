@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            background-color: lightblue;
+            border: 5px solid blue;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .horizontal {
+            display: flex;
+        }
+
+        .centered {
+            justify-content: center;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Default (without flex, block level elements):</p>
+    <div class="container">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+
+    <p>With flex container:</p>
+    <div class="horizontal container">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+
+    <p>With flex container, aligned at the center:</p>
+    <div class="horizontal container centered">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+
+</body>
+
+</html>

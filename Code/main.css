@@ -38,12 +38,14 @@
     width: 100%;
     text-align: center;
     border: none;
+    color:black !important;
     padding: 5px 15px;
 }
 
 
 .sellButton{
   background-color: darkgrey;
+  color:black !important;
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -51,9 +53,7 @@
   padding: 5px 15px;
 }
 
-.active{
-  background: black !important;
+.aktimel{
+  background: #337ab7;
+  color:white;
 }
-
-
-

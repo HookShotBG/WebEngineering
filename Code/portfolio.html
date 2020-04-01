@@ -14,23 +14,17 @@
 <body>
 <script>
   $( document ).ready(function() {
- $('#titlesHeld').on('click', '.clickable-row', function(event) {
-  var elements = $(this).siblings();
-  //foreach got not detected with its content as array hence this construct removes all css from not selected rows
-  for(var x = 0; x < elements.length; x++){
-    elements[x].style.background = "";
-  }
- if(this.style.background !== ""){
-  this.style.background = "";
- }else{
-  $(this).css({"background":"#337ab7"});  
- }
+ 
+  $('#titlesHeld').on('click', '.clickable-row', function(event) {
+    $(this).siblings().removeClass("aktimel");
+    $(this).toggleClass("aktimel");
+  });
   
-
+  $('#titlesHeld').on('dblclick', '.clickable-row', function(event) {   
+    $("#detailbutton").click();
+  });
 
 });
-});
-      
 </script>
 
 
@@ -129,7 +123,7 @@
               </tr>
             </table>
             <br>
-            <button type="button" class="blockButton" data-toggle="modal" data-target="#detailModal">Details</button> 
+            <button type="button" id="detailbutton" lass="blockButton" data-toggle="modal" data-target="#detailModal">Details</button> 
 
             <br>
                <div class="row">

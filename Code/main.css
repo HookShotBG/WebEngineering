@@ -35,16 +35,17 @@
 .buyButton{
     background-color: lightgray;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     text-align: center;
     border: none;
     padding: 5px 15px;
 }
 
+
 .sellButton{
   background-color: darkgrey;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   text-align: center;
   border: none;
   padding: 5px 15px;

@@ -12,6 +12,27 @@
 
 </head>
 <body>
+<script>
+  $( document ).ready(function() {
+ $('#titlesHeld').on('click', '.clickable-row', function(event) {
+  var elements = $(this).siblings();
+  //foreach got not detected with its content as array hence this construct removes all css from not selected rows
+  for(var x = 0; x < elements.length; x++){
+    elements[x].style.background = "";
+  }
+ if(this.style.background !== ""){
+  this.style.background = "";
+ }else{
+  $(this).css({"background":"#337ab7"});  
+ }
+  
+
+
+});
+});
+      
+</script>
+
 
 <nav class="navbar navbar-inverse visible-xs">
   <div class="container-fluid">
@@ -126,7 +147,7 @@
         <div class="col-sm-12">
           <div class="well">
             <h3>PORTFOLIO</h3> 
-            <table class="table table-hover">
+            <table class="table" id="titlesHeld">
                 <thead>
                   <tr>
                     <th scope="col">Stocks</th>
@@ -138,7 +159,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="clickable-row">
                     <td>Microsoft Inc</td>
                     <td>175.00</td>
                     <td class="pLoss">-3.28%</td>
@@ -146,7 +167,7 @@
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
                     <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
-                  <tr>
+                  <tr class="clickable-row">
                     <td>Amazon</td>
                     <td>135.00</td>
                     <td class="pLoss">-1.50%</td>
@@ -154,7 +175,7 @@
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
                     <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
-                  <tr>
+                  <tr class="clickable-row">
                     <td>Tesla</td>
                     <td>175.00</td>
                     <td class="pProfit">+1.87%</td>
@@ -162,7 +183,7 @@
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
                     <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
-                  <tr>
+                  <tr class="clickable-row">
                     <td>Swisscom</td>
                     <td>175.00</td>
                     <td class="pProfit">+5.42%</td>
@@ -178,7 +199,6 @@
     </div>
   </div>
 </div>
-
 
 
 

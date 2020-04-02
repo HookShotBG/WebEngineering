@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio</title>
+  <title>Search</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,21 +12,6 @@
 
 </head>
 <body>
-<script>
-  $( document ).ready(function() {
- 
-  $('#titlesHeld').on('click', '.clickable-row', function(event) {
-    $(this).siblings().removeClass("aktimel");
-    $(this).toggleClass("aktimel");
-  });
-
-  $('#titlesHeld').on('dblclick', '.clickable-row', function(event) {   
-    $("#detailbutton").click();
-  });
-
-});
-</script>
-
 
 <nav class="navbar navbar-inverse visible-xs">
   <div class="container-fluid">
@@ -40,8 +25,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="markets.html">Markets</a></li>
-        <li class="active"><a href="portfolio.html">Portfolio</a></li>
+        <li class="active"><a href="markets.html">Markets</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#section2">Watchlist</a></li>
         <li><a href="#section3">Social</a></li>
         <li><a href="#section3">Settings</a></li>
@@ -55,8 +40,8 @@
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>TradeIT</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="markets.html">Markets</a></li>
-        <li class="active"><a href="portfolio.html">Portfolio</a></li>
+        <li class="active"><a href="markets.html">Markets</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="#section2">Watchlist</a></li>
         <li><a href="#section3">Social</a></li>
         <li><a href="#section3">Settings</a></li>
@@ -86,60 +71,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <img src="chart.png"  width="100%"> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h3><u>Overview</u></h3>
-            <table>
-              <tr>
-                <td width="90%">Rate:</td>
-                <td>175</td>
-              </tr>
-              <tr>
-                <td width="90%">My Investment:</td>
-                <td>1575</td>
-              </tr>
-              <tr>
-                <td width="90%">Invested at:</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td width="90%">Units:</td>
-                <td>9</td>
-              </tr>
-              <tr>
-                <td width="90%">Profit/Loss:</td>
-                <td><span class="pProfit">+675</span></td>
-              </tr>
-              <tr>
-                <td width="90%">Profit/Loss %:</td>
-                <td><span class="pProfit" >+75%</span></td>
-              </tr>
-            </table>
-            <br>
-            <button type="button" id="detailbutton" class="blockButton" data-toggle="modal" data-target="#detailModal">Details</button> 
-
-            <br>
-               <div class="row">
-                  <div id="divBtn" class="col-md-6">
-                    <button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button> 
-                  </div>
-                  <div id="divBtn" class="col-md-6">
-                    <button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal">Sell</button> 
-                   </div>
-                </div> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-sm-12">
           <div class="well">
-            <h3>PORTFOLIO</h3> 
-            <table class="table" id="titlesHeld">
+            <div class="active-cyan-4 mb-4">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            <h3>Stocks</h3> 
+            <table class="table table-hover">
                 <thead>
                   <tr>
                     <th scope="col">Stocks</th>
@@ -151,7 +89,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="clickable-row">
+                  <tr>
                     <td>Microsoft Inc</td>
                     <td>175.00</td>
                     <td class="pLoss">-3.28%</td>
@@ -159,7 +97,7 @@
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
                     <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
-                  <tr class="clickable-row">
+                  <tr>
                     <td>Amazon</td>
                     <td>135.00</td>
                     <td class="pLoss">-1.50%</td>
@@ -167,7 +105,7 @@
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
                     <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
-                  <tr class="clickable-row">
+                  <tr>
                     <td>Tesla</td>
                     <td>175.00</td>
                     <td class="pProfit">+1.87%</td>
@@ -175,7 +113,7 @@
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
                     <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
-                  <tr class="clickable-row">
+                  <tr>
                     <td>Swisscom</td>
                     <td>175.00</td>
                     <td class="pProfit">+5.42%</td>
@@ -191,10 +129,6 @@
     </div>
   </div>
 </div>
-
-
-
-
 
 
 <div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

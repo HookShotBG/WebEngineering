@@ -21,12 +21,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">TradeIT</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="markets.html">Markets</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="#section2">Watchlist</a></li>
         <li><a href="#section3">Social</a></li>
         <li><a href="#section3">Settings</a></li>
@@ -93,21 +93,18 @@
                     <td>1.0562</td>
                     <td class="pLoss">-0.14%</td>
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
-                    <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
                   <tr>
                     <td>US DOLLAR</td>
                     <td>0.9784</td>
                     <td class="pProfit">+0.47%</td>
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
-                    <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
                   <tr>
                     <td>Australian Dollar</td>
                     <td>0.5869</td>
                     <td class="pProfit">+0.65%</td>
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
-                    <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -127,21 +124,18 @@
                     <td>6543.79</td>
                     <td class="pLoss">-1.42%</td>
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
-                    <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
                   <tr>
                     <td>Ethereum</td>
-                    <td>139.7648</td>
+                    <td>139.7647</td>
                     <td class="pLoss">-1.78%</td>
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
-                    <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
                   <tr>
                     <td>Litecoinv</td>
                     <td>39.9755</td>
                     <td class="pProfit">+0.11%</td>
                     <td><button type="button" class="buyButton" data-toggle="modal" data-target="#buyModal">Buy</button></td>
-                    <td><button type="button" class="sellButton" data-toggle="modal" data-target="#sellModal"> Sell</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -153,77 +147,71 @@
 </div>
 
 
-<div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalArea" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sell</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <h3 class="modal-title" id="sellModalArea">Sell</h3>
       </div>
 
       <div class="modal-body">
         <form>
           <form>
             <div class="form-group row">
-              <label for="staticSymbol" class="col-sm-2 col-form-label">Symbol:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticSymbol" value="VUSA">
+              <label for="staticSymbol" class="col-sm-4 col-form-label">Symbol:</label>
+              <div class="col-sm-8">
+                <span id="staticSymbol">VUSA</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticPrice" class="col-sm-2 col-form-label">Price:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticPrice" value="48.10 CHF">
+              <label for="staticPrice" class="col-sm-4 col-form-label">Price:</label>
+              <div class="col-sm-8">
+                <span id="staticPrice" >48.10 CHF</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticValor" class="col-sm-2 col-form-label">Valor:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticValor" value="1298739">
+              <label for="staticValor" class="col-sm-4 col-form-label">Valor:</label>
+              <div class="col-sm-8">
+                <span id="staticValor" >1298739</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticZeit" class="col-sm-2 col-form-label">Time:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticZeit" value="10:06:15">
+              <label for="staticZeit" class="col-sm-4 col-form-label">Time:</label>
+              <div class="col-sm-8">
+                <span id="staticZeit" >10:06:15</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputUnits" class="col-sm-2 col-form-label">Units:</label>
-              <div class="col-sm-10">
+              <label for="inputUnits" class="col-sm-4 col-form-label">Units:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputUnits" placeholder="Units">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputLimite" class="col-sm-2 col-form-label">Limit:</label>
-              <div class="col-sm-10">
+              <label for="inputLimite" class="col-sm-4 col-form-label">Limit:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputLimite" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputStoploss" class="col-sm-2 col-form-label">Stop Loss:</label>
-              <div class="col-sm-10">
+              <label for="inputStoploss" class="col-sm-4 col-form-label">Stop Loss:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputStoploss" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputTakeprofit" class="col-sm-2 col-form-label">Take Profit:</label>
-              <div class="col-sm-10">
+              <label for="inputTakeprofit" class="col-sm-4 col-form-label">Take Profit:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputTakeprofit" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticValid" class="col-sm-2 col-form-label">Valid until:</label>
-              <div class="col-sm-10">
-                <input type="date" readonly class="form-control-plaintext" id="staticValid" value="30.03.2020">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="staticGegenwert" class="col-sm-2 col-form-label">Equivalent:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticGegenwert" value="2000 CHF">
+              <label for="staticGegenwert" class="col-sm-4 col-form-label">Equivalent:</label>
+              <div class="col-sm-8">
+                <span id="staticGegenwert">2000 USD</span>
               </div>
             </div>
           </form>
@@ -237,78 +225,71 @@
   </div>
 </div>
 
-
-<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalArea" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Buy</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <h3 class="modal-title" id="buyModalArea">Buy</h3>
       </div>
 
       <div class="modal-body">
         <form>
           <form>
             <div class="form-group row">
-              <label for="staticSymbol" class="col-sm-2 col-form-label">Symbol:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticSymbol" value="VUSA">
+              <label for="staticSymbol" class="col-sm-4 col-form-label">Symbol:</label>
+              <div class="col-sm-8">
+                <span id="staticSymbol">VUSA</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticPrice" class="col-sm-2 col-form-label">Price:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticPrice" value="48.10 CHF">
+              <label for="staticPrice" class="col-sm-4 col-form-label">Price:</label>
+              <div class="col-sm-8">
+                <span id="staticPrice" >48.10 CHF</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticValor" class="col-sm-2 col-form-label">Valor:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticValor" value="1298739">
+              <label for="staticValor" class="col-sm-4 col-form-label">Valor:</label>
+              <div class="col-sm-8">
+                <span id="staticValor" >1298739</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticZeit" class="col-sm-2 col-form-label">Time:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticZeit" value="10:06:15">
+              <label for="staticZeit" class="col-sm-4 col-form-label">Time:</label>
+              <div class="col-sm-8">
+                <span id="staticZeit" >10:06:15</span>
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputUnits" class="col-sm-2 col-form-label">Units:</label>
-              <div class="col-sm-10">
+              <label for="inputUnits" class="col-sm-4 col-form-label">Units:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputUnits" placeholder="Units">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputLimite" class="col-sm-2 col-form-label">Limit:</label>
-              <div class="col-sm-10">
+              <label for="inputLimite" class="col-sm-4 col-form-label">Limit:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputLimite" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputStoploss" class="col-sm-2 col-form-label">Stop Loss:</label>
-              <div class="col-sm-10">
+              <label for="inputStoploss" class="col-sm-4 col-form-label">Stop Loss:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputStoploss" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputTakeprofit" class="col-sm-2 col-form-label">Take Profit:</label>
-              <div class="col-sm-10">
+              <label for="inputTakeprofit" class="col-sm-4 col-form-label">Take Profit:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputTakeprofit" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticValid" class="col-sm-2 col-form-label">Valid until:</label>
-              <div class="col-sm-10">
-                <input type="date" readonly class="form-control-plaintext" id="staticValid" value="30.03.2020">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="staticGegenwert" class="col-sm-2 col-form-label">Equivalent:</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticGegenwert" value="2000 CHF">
+              <label for="staticGegenwert" class="col-sm-4 col-form-label">Equivalent:</label>
+              <div class="col-sm-8">
+                <span id="staticGegenwert">2000 USD</span>
               </div>
             </div>
           </form>

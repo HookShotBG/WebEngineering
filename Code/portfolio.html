@@ -73,9 +73,8 @@ chart.render();
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#section1">Portfolio</a></li>
-        <li><a href="search.html">Search</a></li>
         <li><a href="markets.html">Markets</a></li>
+        <li class="active"><a href="#portfolio">Portfolio</a></li>
         <li><a href="#section2">Watchlist</a></li>
         <li><a href="#section3">Social</a></li>
         <li><a href="#section3">Settings</a></li>
@@ -89,9 +88,8 @@ chart.render();
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>TradeIT</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="search.html">Search</a></li>
         <li><a href="markets.html">Markets</a></li>
+        <li class="active"><a href="#portfolio">Portfolio</a></li>
         <li><a href="#section2">Watchlist</a></li>
         <li><a href="#section3">Social</a></li>
         <li><a href="#section3">Settings</a></li>
@@ -321,72 +319,72 @@ chart.render();
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Buy</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <h3 class="modal-title" id="exampleModalLabel">Buy</h3>
       </div>
 
       <div class="modal-body">
         <form>
           <form>
             <div class="form-group row">
-              <label for="staticSymbol" class="col-sm-2 col-form-label">Symbol:</label>
-              <div class="col-sm-10">
+              <label for="staticSymbol" class="col-sm-4 col-form-label">Symbol:</label>
+              <div class="col-sm-8">
                 <input type="text" readonly class="form-control-plaintext" id="staticSymbol" value="VUSA">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticPrice" class="col-sm-2 col-form-label">Price:</label>
-              <div class="col-sm-10">
+              <label for="staticPrice" class="col-sm-4 col-form-label">Price:</label>
+              <div class="col-sm-8">
                 <input type="text" readonly class="form-control-plaintext" id="staticPrice" value="48.10 CHF">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticValor" class="col-sm-2 col-form-label">Valor:</label>
-              <div class="col-sm-10">
+              <label for="staticValor" class="col-sm-4 col-form-label">Valor:</label>
+              <div class="col-sm-8">
                 <input type="text" readonly class="form-control-plaintext" id="staticValor" value="1298739">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticZeit" class="col-sm-2 col-form-label">Time:</label>
-              <div class="col-sm-10">
+              <label for="staticZeit" class="col-sm-4 col-form-label">Time:</label>
+              <div class="col-sm-8">
                 <input type="text" readonly class="form-control-plaintext" id="staticZeit" value="10:06:15">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputUnits" class="col-sm-2 col-form-label">Units:</label>
-              <div class="col-sm-10">
+              <label for="inputUnits" class="col-sm-4 col-form-label">Units:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputUnits" placeholder="Units">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputLimite" class="col-sm-2 col-form-label">Limit:</label>
-              <div class="col-sm-10">
+              <label for="inputLimite" class="col-sm-4 col-form-label">Limit:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputLimite" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputStoploss" class="col-sm-2 col-form-label">Stop Loss:</label>
-              <div class="col-sm-10">
+              <label for="inputStoploss" class="col-sm-4 col-form-label">Stop Loss:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputStoploss" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputTakeprofit" class="col-sm-2 col-form-label">Take Profit:</label>
-              <div class="col-sm-10">
+              <label for="inputTakeprofit" class="col-sm-4 col-form-label">Take Profit:</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputTakeprofit" placeholder="Optional">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticValid" class="col-sm-2 col-form-label">Valid until:</label>
-              <div class="col-sm-10">
+              <label for="staticValid" class="col-sm-4 col-form-label">Valid until:</label>
+              <div class="col-sm-8">
                 <input type="date" readonly class="form-control-plaintext" id="staticValid" value="30.03.2020">
               </div>
             </div>
             <div class="form-group row">
-              <label for="staticGegenwert" class="col-sm-2 col-form-label">Equivalent:</label>
-              <div class="col-sm-10">
+              <label for="staticGegenwert" class="col-sm-4 col-form-label">Equivalent:</label>
+              <div class="col-sm-8">
                 <input type="text" readonly class="form-control-plaintext" id="staticGegenwert" value="2000 CHF">
               </div>
             </div>
@@ -410,48 +408,48 @@ chart.render();
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Microsoft Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <h3 class="modal-title" id="exampleModalLabel">Microsoft Details</h3>
       </div>
 
       <div class="modal-body">
         <form>
           <div class="form-group row">
-            <label for="staticPEratio" class="col-sm-2 col-form-label">P/E Ratio:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="staticPEratio" value="27.91">
+            <label for="staticPEratio" class="col-sm-4 col-form-label">P/E Ratio:</label>
+            <div class="col-sm-8">
+              <span id="staticPEratio" >27.91</span>
             </div>
           </div>
           <div class="form-group row">
-            <label for="staticMarketcap" class="col-sm-2 col-form-label">Marketcap:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="staticMarketcap" value="1210 Billions">
+            <label for="staticMarketcap" class="col-sm-4 col-form-label">Marketcap:</label>
+            <div class="col-sm-8">
+              <span id="staticMarketcap">1210 Billions</span>
             </div>
           </div>
           <div class="form-group row">
-            <label for="static52weekhigh" class="col-sm-2 col-form-label">52 Week High:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="static52weekhigh" value="190.7">
+            <label for="static52weekhigh" class="col-sm-4 col-form-label">52 Week High:</label>
+            <div class="col-sm-8">
+              <span id="static52weekhigh">190.7</span>
             </div>
           </div>
           <div class="form-group row">
-            <label for="static52weeklow" class="col-sm-2 col-form-label">52 Week Low:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="static52weeklow" value="118.1">
+            <label for="static52weeklow" class="col-sm-4 col-form-label">52 Week Low:</label>
+            <div class="col-sm-8">
+              <span id="static52weeklow">118.1</span>
             </div>
           </div>
           <div class="form-group row">
-            <label for="staticdivyield" class="col-sm-2 col-form-label">Dividend yield:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="staticdivyield" value="1.27%">
+            <label for="staticdivyield" class="col-sm-4 col-form-label">Dividend yield:</label>
+            <div class="col-sm-8">
+              <span id="staticdivyield">1.27%</span>
             </div>
           </div>
           <div class="form-group row">
-            <label for="staticRevenue" class="col-sm-2 col-form-label">Revenue:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="staticRevenue" value="125.8 Billion USD">
+            <label for="staticRevenue" class="col-sm-4 col-form-label">Revenue:</label>
+            <div class="col-sm-8">
+              <span id="staticRevenue" >125.8 Billion USD</span>
             </div>
           </div>
         </form>
@@ -465,4 +463,4 @@ chart.render();
 
 </body>
 </html>
-              <input type="text" readonly class="form-control-plaintext" id="staticRevenue" value="125.8 Billion USD">
+
